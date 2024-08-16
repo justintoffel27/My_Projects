@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/app.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <!-- Setting up our container for the UI chrome extension -->
+    <div class="container">
+
+        <div class="lock-logo-div">
+            <img src="./pictures/icon-lock.png" alt="LOCK ICON">
+        </div>
+
+        <!-- Creating sections/boxes for the UI -->
+        <!-- First three switches -->
+        <section class="settings-container">
+            <div class="setting">
+                <label for="includeDigits">
+                    <span>Include Digits: </span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="includeDigits" checked>
+            </div>
+
+            <div class="setting">
+                <label for="specialChar">
+                    <span>Include Special Characters: </span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="specialChar" checked>
+            </div>
+
+            <div class="setting">
+                <label for="letterMix">
+                    <span>Uppercase Letters:</span>
+                    <span class="note">*Lowercase letters will ALWAYS be used*</span>
+                    <span></span>
+                </label>
+                <input type="checkbox" id="letterMix" checked>
+            </div>
+
+
+        </section>
+
+        <!-- Character Length -->
+        <section class="character-length">
+            <p>Your password will be: <span id="charLengthSpan">15</span> Characters Long</p>
+            <p>Slide to adjust the length of your password!</p>
+            <input type="range" id="charatersLengthSlider" min="5" max="30" value="15">
+        </section>
+
+        <!-- Generated Password-->
+        <section class="generated-password">
+            <input type="text" id="generatedPassword" spellcheck="false">
+            <button class="copy-password" id="copyPassword">Copy</button>
+            <!-- Show a confirmation message once password copied to show it was copied correctly -->
+            <div class="confirmation" id="confirmation">
+                <p>Password Copied!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

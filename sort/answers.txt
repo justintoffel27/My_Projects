@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Faster time than sort3, bubble sort is faster when sorted in order.
+
+sort2 uses: Merge Sort
+
+How do you know?: Fastest time all in all.
+
+sort3 uses: Selection Sort
+
+How do you know?: Slower than sort1, selection sort needs to go through all the arrays to look for the smallest number, each cycle, everytime.
