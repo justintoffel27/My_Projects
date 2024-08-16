@@ -1,0 +1,6 @@
+Program Start
+Program prompts user for designated height
+    If user inputs height of (h > 1) or (8 < h), with "h" being height, then prompt the user again for height, repeat until user inputs height of (0 < h < 9).
+    If user inputs height of (0 < h < 9), with "h" being height, display the hashtag staircase.
+        Bottom level: display number of hashtags from "h"
+            For each level of "+1", disease "h", display " " and " \n", and repeat steps with "h - 1"
